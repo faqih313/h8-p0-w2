@@ -1,0 +1,21 @@
+1.
+DECLARE function ΣF = m * a
+DECLARE m = 600 kg
+DECLARE a = 2 m/s2
+COMPUTE m * a
+SHOW the result of computing as function ΣF
+
+2.
+DECLARE tahun as any value
+if tahun modulo 4 is 0 but tahun modulo 100 is not 0, then the value is TRUE
+if tahun modulo 4 is 0, tahun modulo 100 is 0, and tahun modulo 400 is 0, then the value is TRUE
+if else, the value is FALSE
+SHOW the value
+
+3.
+DECLARE cucianFoxie is 20
+since cucianYangDisetor less than cucianFoxie, then mesinCuci can not run
+while cucianYangDisetor is equal than cucianFoxie, then mesinCuci run
+
+4.
+if there is siswa have a long nail, then guru give them a punishment
