@@ -1,29 +1,28 @@
-var tanggal = 28
-var bulan = 4
-var tahun = 1995
+var tanggal = 17
+var bulan = 8
+var tahun = 1945
 var strTanggal = String(tanggal)
 var strTahun = String(tahun)
-if(tanggal < 1 || tanggal > 31) {
+if(tanggal<1 || tanggal>31) {
     console.log('Input tanggal tidak sesuai!')
+} else if (bulan<1 || bulan>12) {
+    console.log('Input bulan tidak sesuai!')
+} else if(tahun<1900 || tahun>2200) {
+    console.log('Input tahun tidak sesuai!')
 } else {
-    if(tahun < 1900 || tahun > 2200) {
-        console.log('Input tahun tidak sesuai!')
+    switch(bulan) {
+        case 1: {bulan='Januari'; break;}
+        case 2: {bulan='Februari'; break;}
+        case 3: {bulan='Maret'; break;}
+        case 4: {bulan='April'; break;}
+        case 5: {bulan='Mei'; break;}
+        case 6: {bulan='Juni'; break;}
+        case 7: {bulan='Juli'; break;}
+        case 8: {bulan='Agustus'; break;}
+        case 9: {bulan='September'; break;}
+        case 10: {bulan='Oktober'; break;}
+        case 11: {bulan='November'; break;}
+        case 12: {bulan='Desember'; break;}
     }
-    else {
-        switch(bulan) {
-            case 1: {console.log(strTanggal + ' ' + 'Januari' + ' ' + strTahun); break;}
-            case 2: {console.log(strTanggal + ' ' + 'Februari' + ' ' + strTahun); break;}
-            case 3: {console.log(strTanggal + ' ' + 'Maret' + ' ' + strTahun); break;}
-            case 4: {console.log(strTanggal + ' ' + 'April' + ' ' + strTahun); break;}
-            case 5: {console.log(strTanggal + ' ' + 'Mei' + ' ' + strTahun); break;}
-            case 6: {console.log(strTanggal + ' ' + 'Juni' + ' ' + strTahun); break;}
-            case 7: {console.log(strTanggal + ' ' + 'Juli' + ' ' + strTahun); break;}
-            case 8: {console.log(strTanggal + ' ' + 'Agustus' + ' ' + strTahun); break;}
-            case 9: {console.log(strTanggal + ' ' + 'September' + ' ' + strTahun); break;}
-            case 10: {console.log(strTanggal + ' ' + 'Oktober' + ' ' + strTahun); break;}
-            case 11: {console.log(strTanggal + ' ' + 'November' + ' ' + strTahun); break;}
-            case 12: {console.log(strTanggal + ' ' + 'Desember' + ' ' + strTahun); break;}
-            default: {console.log('Input bulan tidak sesuai!');}
-        }
-    }
+    console.log(strTanggal,bulan,strTahun)
 }
