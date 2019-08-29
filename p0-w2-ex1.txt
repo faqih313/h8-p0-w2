@@ -1,21 +1,72 @@
 1.
-DECLARE function ΣF = m * a
-DECLARE m = 600 kg
-DECLARE a = 2 m/s2
-COMPUTE m * a
-SHOW the result of computing as function ΣF
+PSEUDOCODE
+START
+READ `m` with 600
+READ `a` with 2
+COMPUTE `F` as `m` * `a`
+SHOW `F`
+END
 
 2.
-DECLARE tahun as any value
-if tahun modulo 4 is 0 but tahun modulo 100 is not 0, then the value is TRUE
-if tahun modulo 4 is 0, tahun modulo 100 is 0, and tahun modulo 400 is 0, then the value is TRUE
-if else, the value is FALSE
-SHOW the value
+ALGORITMA
+Buat & input nilai variabel `tahun` dengan angka berapapun
+Buat & input nilai variabel `hasil` dengan string kosong
+Jika `tahun` habis dibagi 4 namun tidak habis dibagi 100, maka ganti `hasil` menjadi 'TAHUN KABISAT'
+Jika `tahun` habis dibagi 100 dan habis dibagi 400, maka ganti `hasil` juga menjadi 'TAHUN KABISAT'
+Jika tidak, maka ganti `hasil` menjadi 'BUKAN TAHUN KABISAT'  
+Tampilkan `hasil`
+
+PSEUDOCODE
+START
+READ and SAVE `tahun` with any value number
+READ and SAVE `hasil` with ''
+IF `tahun` mod 4 is 0 AND `tahun` mod 100 is not 0, THEN REASIGN `hasil` with 'TAHUN KABISAT'
+ELSE IF `tahun` mod 100 is 0 AND `tahun` mod 400 is 0, THEN REASIGN `hasil` with 'TAHUN KABISAT'
+ELSE, REASIGN `hasil` with "BUKAN TAHUN KABISAT"
+ENDIF
+SHOW `tahun`
+END
 
 3.
-DECLARE cucianFoxie is 20
-since cucianYangDisetor less than cucianFoxie, then mesinCuci can not run
-while cucianYangDisetor is equal than cucianFoxie, then mesinCuci run
+ALGORITMA
+Buat & input nilai variabel `maksimalBeban` dengan 20
+Buat & input nilai variabel `pakaianMasuk` dengan 0
+Buat & input nilai variabel `mulaiCuci` dengan false
+Selama `pakaianMasuk` kurang dari `maksimalBeban, maka tambahkan `pakaianMasuk` dengan 1
+Ganti `mulaiCuci` dengan true
+
+PSEUDOCODE
+START
+READ and SAVE `maksimalBeban` with 20
+READ and SAVE `pakaianMasuk` with 0
+READ `mulaiCuci` with false
+WHILE `pakaianMasuk` < `maksimalBeban`, ADD `pakaianMasuk` by 1
+ENDWHILE
+REASIGN `mulaiCuci` with true
+END
 
 4.
-if there is siswa have a long nail, then guru give them a punishment
+ALGORITMA
+Buat dan input daftar murid 'berkuku panjang' dan 'berkuku pendek' sebanyak 40 murid
+Buat dan input tindakan guru dengan string kosong
+Buat dan input murid yang telah diperiksa dengan nol
+Selama murid yang telah diperiksa kurang dari 40, periksa murid
+Jika murid 'berkuku pendek' maka ganti tindakan guru menjadi 'memuji'
+Jika tidak, maka ganti tindakan guru menjadi 'menghukum'
+Tampilkan tindakan guru
+Tambahkan murid yang telah diperiksa dengan 1
+
+PSEUDOCODE
+START
+READ and SAVE `dataSiswa` as matrix that contain 40 data 'berkuku panjang' or 'berkuku pendek'
+READ and SAVE `tindakanGuru` with ''
+READ and SAVE `sudahDiperiksa` with 0
+WHILE `sudahDiperiksa` < 40,
+IF `dataSiswa` [`sudahDiperiksa`] is 'berkuku pendek', THEN REASIGN `tindakanGuru` with 'memuji'
+ELSE, THEN REASIGN `tindakanGuru` with 'menghukum'
+SHOW `tindakanGuru`
+ENDIF
+ADD `sudahDiperiksa` by 1
+ENDWHILE
+END 
+
