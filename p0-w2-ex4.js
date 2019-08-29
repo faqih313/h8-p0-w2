@@ -1,6 +1,6 @@
-var tanggal = 31
-var bulan = 12
-var tahun = 2000
+var tanggal = 28
+var bulan = 4
+var tahun = 1995
 var strTanggal = String(tanggal)
 var strTahun = String(tahun)
 if(tanggal < 1 || tanggal > 31) {

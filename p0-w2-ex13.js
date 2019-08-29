@@ -1,28 +1,23 @@
 function xo(str) {
-    var penampungX = 0
-    var penampungO = 0
-    for( var i = 0; i < str.length; i++) {
-        if(str[i] === 'x') {
-            penampungX += 1
-        }
-        else {
-            penampungO += 1
+    var tempX=0
+    var tempO=0
+    for(var i=0; i<str.length; i++) {
+        if(str[i] == "x") {
+            tempX+=1
+        } else {
+            tempO+=1
         }
     }
-    if(penampungX === penampungO) {
+    if(tempX==tempO) {
         return true
-    }
-    else {
+    } else {
         return false
     }
   }
   
-  // TEST CASES
+//   TEST CASES
   console.log(xo('xoxoxo')); // true
   console.log(xo('oxooxo')); // false
   console.log(xo('oxo')); // false
   console.log(xo('xxxooo')); // true
   console.log(xo('xoxooxxo')); // true
-  console.log(xo('xxxxo'))
-  console.log(xo('xoooo'))
-  console.log(xo('xo'))
