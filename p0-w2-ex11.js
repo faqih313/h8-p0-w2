@@ -1,10 +1,10 @@
 function balikKata(kata) {
-    var temp=""
-    for(var i=kata.length-1; i>-1; i--) {
-        temp+=kata[i]
+    var hasil = ''
+    for (var i=kata.length-1; i>-1; i--){
+        hasil+=kata[i]
     }
-    return temp
-  }
+    return hasil
+}
   
   // TEST CASES
   console.log(balikKata('Hello World and Coders')); // sredoC dna dlroW olleH
