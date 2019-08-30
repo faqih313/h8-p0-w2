@@ -1,8 +1,6 @@
 function konversiMenit(menit) {
-  var jam=Math.floor(menit/60)
-  var menit=("0"+menit%60).slice(-2)
-  var result=jam+":"+menit
-  return result
+  var jam = Math.trunc(menit/60)+':'+("0"+menit%60).slice(-2)
+  return jam
 }
 
 // TEST CASES
