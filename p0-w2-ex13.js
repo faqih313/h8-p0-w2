@@ -1,21 +1,21 @@
 function xo(str) {
-    var tempX=0
-    var tempO=0
-    for(var i=0; i<str.length; i++) {
-        if(str[i] == "x") {
-            tempX+=1
-        } else {
-            tempO+=1
+    var jumlahX = 0
+    var jumlahO = 0
+    for (var i=0; i<str.length; i++) {
+        if(str[i]==='x') {
+            jumlahX++
+        } else if (str[i]==='o') {
+            jumlahO++
         }
     }
-    if(tempX==tempO) {
+    if (jumlahX===jumlahO) {
         return true
     } else {
         return false
     }
-  }
+}
   
-//   TEST CASES
+  // TEST CASES
   console.log(xo('xoxoxo')); // true
   console.log(xo('oxooxo')); // false
   console.log(xo('oxo')); // false
